@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: League-Sparta, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -18,13 +18,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+/* Components */
+
+/* Header  */
 .header-main {
   @apply bg-slate-800
   w-full 
-  flex flex-col flex-wrap py-8
+  flex flex-col flex-wrap py-4
   justify-center items-center 
 
 }
+
+/* NavBar Main  */
 
 .navbar-main {
   @apply box-border 
@@ -45,4 +52,15 @@ code {
 .navbar-main img {
   @apply w-20 h-20
   absolute right-20;
+}
+
+/* NavBar Main Links */
+
+.navbar-main-links-wrapper {
+  @apply absolute flex flex-col sm:flex-row flex-wrap justify-around gap-20 items-center top-36 
+  text-2xl text-slate-800 
+}
+
+.navbar-main-link {
+  @apply hover:border-b-2 hover:border-slate-800
 }
