@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "League-Spartan": ["League Spartan", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
