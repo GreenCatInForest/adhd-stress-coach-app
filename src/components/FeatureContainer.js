@@ -8,10 +8,29 @@ let featureCardDatas = [
     {
         feature_card_title: "Relax",
         description: "This is a feature card",
+        submenus: [
+            {
+                submenu_title: "Submenu 1",
+                submenu_description: "This is a submenu"
+            },
+            {
+                submenu_title: "Submenu 2",
+                submenu_description: "This is a submenu"
+            },
+            {
+                submenu_title: "Submenu 3",
+                submenu_description: "This is a submenu"
+            }
+        ],
         buttonText: "Click me"
     },
     {
         feature_card_title: "Plan",
+        description: "This is a feature card",
+        buttonText: "Click me"
+    },
+    {
+        feature_card_title: "Focus on",
         description: "This is a feature card",
         buttonText: "Click me"
     },
@@ -56,7 +75,8 @@ let featureCardDatas = [
                 feature_card_title = {featureCardData.feature_card_title} 
                 description = {featureCardData.description} 
                 buttonText = {featureCardData.buttonText}
-                key = {featureCardData.feature_card_title} />)
+                key = {featureCardData.feature_card_title} 
+                submenus = {featureCardData.submenus}/>)
             })}
         </div>
     )
