@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 
 body {
   margin: 0;
@@ -15,7 +15,7 @@ body {
 
 code {
 
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: League-Sparta, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -45,12 +45,14 @@ code {
   flex flex-col sm:flex-row flex-wrap justify-center items-center
 }
 
-.navbar-main h1 {
-  @apply text-6xl font-bold;
+.navbar-main h1 a {
+  @apply text-3xl text-slate-800
+  font-bold
 }
 
+
 .navbar-main img {
-  @apply w-20 h-20
+  @apply w-12 h-12
   absolute right-20;
 }
 
@@ -58,9 +60,9 @@ code {
 
 .navbar-main-links-wrapper {
   @apply absolute flex flex-col sm:flex-row flex-wrap justify-around gap-20 items-center top-36 
-  text-2xl text-slate-800 
+   text-slate-800 
 }
 
 .navbar-main-link {
-  @apply hover:border-b-2 hover:border-slate-800
+  @apply hover:border-b-2 hover:border-slate-800 text-xl
 }
