@@ -55,7 +55,8 @@ let featureCardDatas = [
                 <FeatureCard 
                 feature_card_title = {featureCardData.feature_card_title} 
                 description = {featureCardData.description} 
-                buttonText = {featureCardData.buttonText}/>)
+                buttonText = {featureCardData.buttonText}
+                key = {featureCardData.feature_card_title} />)
             })}
         </div>
     )
