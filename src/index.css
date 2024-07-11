@@ -22,8 +22,16 @@ code {
 /* App Wrapper */
 
 .app-wrapper {
-  @apply flex flex-col flex-wrap justify-center items-center gap-36;
+  @apply flex flex-col flex-wrap justify-center items-center gap-0 sm:gap-36;
 }
+
+/* Pages */
+
+.home-main {
+  @apply flex flex-col flex-wrap justify-center items-center gap-20 w-full sm:w-9/12 mx-auto;
+}
+
+
 
 /* Components */
 
@@ -43,7 +51,10 @@ code {
   relative
   w-full 
   sm:w-9/12 
-  text-center h-24 
+  text-center 
+  h-full
+  sm:h-24 
+  gap-6 sm:gap-0
   mx-auto
   bg-white
   rounded-xl
@@ -65,7 +76,7 @@ code {
 /* NavBar Main Links */
 
 .navbar-main-links-wrapper {
-  @apply absolute flex flex-col sm:flex-row flex-wrap justify-around gap-20 items-center top-36 
+  @apply sm:absolute flex flex-col sm:flex-row flex-wrap justify-around gap-8 my-4 sm:my-0 sm:gap-20 items-center top-36 
    text-slate-800 
 }
 
@@ -93,4 +104,10 @@ code {
 }
 .hero-main h2 {
   @apply text-2xl text-slate-800 font-bold;
+}
+
+/* Feature Container */
+
+.feature-container-main {
+  @apply bg-pink-300;
 }
