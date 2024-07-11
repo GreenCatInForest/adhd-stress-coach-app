@@ -1,15 +1,20 @@
+import { Link } from 'react-router-dom';
+
 import nightModeIcon from "../assets/images/night-mode.svg";
+
+
 
 export const Navbar = () => {
     return (
         <div className="navbar-main">
-            <h1>ADHD  CH{']'}</h1>
+            <h1><Link to="/" className="font-bold text-xl">ADHD  CH{']'}</Link></h1>
             <img src={nightModeIcon} alt="Night Mode Icon" className="night-mode-icon"/>
             <ul class="navbar-main-links-wrapper">
-                <li class="navbar-main-link">what is it</li>
-                <li class="navbar-main-link">how works</li>
-                <li class="navbar-main-link">what for</li>
-                <li class="navbar-main-link">who</li>
+                <li class="navbar-main-link">
+                <Link to="what-is-it">what is it</Link></li>
+                <li class="navbar-main-link"><Link to="how-works">how works</Link></li>
+                <li class="navbar-main-link"><Link to="what-for">what for</Link></li>
+                <li class="navbar-main-link"><Link to="whos">who</Link></li>
             </ul>     
         </div>
     )
