@@ -19,6 +19,11 @@ code {
     monospace;
 }
 
+/* App Wrapper */
+
+.app-wrapper {
+  @apply flex flex-col flex-wrap justify-center items-center gap-36;
+}
 
 /* Components */
 
@@ -36,6 +41,7 @@ code {
 .navbar-main {
   @apply box-border 
   relative
+  w-full 
   sm:w-9/12 
   text-center h-24 
   mx-auto
@@ -47,13 +53,13 @@ code {
 
 .navbar-main h1 a {
   @apply text-3xl text-slate-800
-  font-bold
+  font-black
 }
 
 
 .navbar-main img {
   @apply w-12 h-12
-  absolute right-20;
+  sm:absolute sm:right-20;
 }
 
 /* NavBar Main Links */
@@ -65,4 +71,26 @@ code {
 
 .navbar-main-link {
   @apply hover:border-b-2 hover:border-slate-800 text-xl
+}
+
+/* Hero */
+
+.hero-main {
+  @apply flex flex-col flex-wrap justify-center items-center gap-10;
+}
+
+.hero-main article {
+  @apply flex flex-col sm:flex-row flex-wrap justify-around 
+  items-end gap-8  text-slate-800 font-black ;
+}
+
+.hero-main article h1 {
+  @apply text-5xl text-slate-800;
+}
+
+.hero-main article button {
+  @apply text-4xl text-slate-800;
+}
+.hero-main h2 {
+  @apply text-2xl text-slate-800 font-bold;
 }
