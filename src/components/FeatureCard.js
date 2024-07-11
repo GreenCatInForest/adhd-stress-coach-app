@@ -1,9 +1,8 @@
-export const FeatureCard = () => {
+export const FeatureCard = ({feature_card_title}) => {
+
     return (
-        <div className="feature-card-main">
-            <div className="feature-card">
-                <h3>FeatureCard</h3>
+            <div className="feature-card-main">
+                <h3>{feature_card_title}</h3>
             </div>
-        </div>
     )
 }
