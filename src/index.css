@@ -114,12 +114,37 @@ code {
 /* Feature Container */
 
 .feature-container-main {
-  @apply flex flex-row flex-wrap flex-auto justify-center items-center gap-10 mx-auto text-center ;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap:1em;
+
+  
+  /* @apply flex flex-row flex-wrap flex-auto justify-center items-center gap-10 mx-auto text-center ; */
 }
 
-.feature-card-main {
-  @apply flex flex-col flex-wrap max-w-56 sm:w-80 min-h-44 border-2 border-slate-800 rounded-xl p-4 gap-4 bg-gray-200 cursor-pointer;
-}
+.feature-card-main:nth-child(3n+1) { order: 2; }
+.feature-card-main:nth-child(3n+2) { order: 2; }
+.feature-card-main:nth-child(3n)   { order: 3; }
+  /* @apply flex flex-col flex-wrap max-w-56 sm:w-80 min-h-44 border-2 border-slate-800 rounded-xl p-4 gap-4 bg-gray-200 cursor-pointer; */
+
+.feature-container-main::before{
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 4;
+  }
+
+  .feature-container-main::after {
+    content: "";
+    flex-basis: 100%;
+    width: 0;
+    order: 3;
+  }
+
+  .feature-card-main {
+   @apply  border-2 border-slate-800 rounded-xl p-4 gap-4 bg-gray-200 cursor-pointer w-full sm:max-w-56;
+  }
 
 .feature-card-main h3 {
   @apply  text-2xl font-MuseoModerno font-bold hover:font-Major-Mono hover:text-3xl transition-all ease-in-out duration-1000;
