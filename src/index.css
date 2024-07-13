@@ -5,9 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+
 body {
   margin: 0;
-  font-family: League-Sparta, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  font-family: League-Spartan, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -24,7 +27,7 @@ code {
 /* App Wrapper */
 
 .app-wrapper {
-  @apply flex flex-col flex-wrap justify-center items-center gap-0 sm:gap-36 ;
+  @apply flex flex-col flex-wrap justify-center items-center gap-0 sm:gap-36 font-League-Spartan;
 }
 
 /* Pages */
@@ -60,13 +63,13 @@ code {
   mx-auto
   bg-white
   rounded-xl
-  font-League-Spartan
+  font-League-Spartan 
   flex flex-col sm:flex-row flex-wrap justify-center items-center
 }
 
 .navbar-main h1 a {
   @apply text-3xl text-slate-800
-  font-black
+  font-League-Spartan  font-bold
 }
 
 
@@ -98,7 +101,7 @@ code {
 }
 
 .hero-main article h1 {
-  @apply text-5xl text-slate-800;
+  @apply text-lg sm:text-5xl text-slate-800;
 }
 
 .hero-main article button {
@@ -115,7 +118,7 @@ code {
 }
 
 .feature-card-main {
-  @apply flex flex-col flex-wrap w-56 sm:w-80 min-h-44 border-2 border-slate-800 rounded-xl p-4 gap-4 bg-gray-200 cursor-pointer;
+  @apply flex flex-col flex-wrap max-w-56 sm:w-80 min-h-44 border-2 border-slate-800 rounded-xl p-4 gap-4 bg-gray-200 cursor-pointer;
 }
 
 .feature-card-main h3 {

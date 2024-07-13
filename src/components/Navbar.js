@@ -7,7 +7,7 @@ import nightModeIcon from "../assets/images/night-mode.svg";
 export const Navbar = () => {
     return (
         <div className="navbar-main">
-            <h1><Link to="/" className="font-bold text-xl">ADHD  CH{']'}</Link></h1>
+            <h1><Link to="/">ADHD  Co{'&'}H</Link></h1>
             <img src={nightModeIcon} alt="Night Mode Icon" className="night-mode-icon"/>
             <ul class="navbar-main-links-wrapper">
                 <li class="navbar-main-link">
