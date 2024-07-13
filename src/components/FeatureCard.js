@@ -3,6 +3,7 @@ import React from 'react';
 
 export const FeatureCard = ({ featureCardData }) => {
     let imageUrl;
+
     try {
         imageUrl = featureCardData.feature_card_img ? require(`./../assets/images/${featureCardData.feature_card_img}`) : undefined;
     } catch (error) {
@@ -11,10 +12,16 @@ export const FeatureCard = ({ featureCardData }) => {
         // imageUrl = require('./../assets/images/defaultImage.jpg').default;
     }
 
+    const cardStyles = {
+        backgroundImage: `url(${imageUrl})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    };
+
     return (
-        <div className="feature-card-main">
+        <div className="feature-card-main" style={cardStyles}>
             {featureCardData.feature_card_title && <h3>{featureCardData.feature_card_title}</h3>}
-            {imageUrl && <img src={imageUrl} alt={featureCardData.feature_card_title} />}
+            {/* {imageUrl && <img src={imageUrl} alt={featureCardData.feature_card_title} />} */}
             {featureCardData.submenus && featureCardData.submenus.map((submenu, index) => (
                 <div key={index} className="submenu-main">
                     <h4>{submenu.submenu_title}</h4>

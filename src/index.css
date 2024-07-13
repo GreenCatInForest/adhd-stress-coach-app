@@ -15,6 +15,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 
 }
 
@@ -27,7 +28,8 @@ code {
 /* App Wrapper */
 
 .app-wrapper {
-  @apply flex flex-col flex-wrap justify-center items-center gap-0 sm:gap-36 font-League-Spartan;
+  @apply flex flex-col flex-wrap justify-center items-center gap-0 sm:gap-36 font-League-Spartan
+  transition-all ease-in-out duration-500;
 }
 
 /* Pages */
@@ -117,7 +119,7 @@ code {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap:1em;
+  gap:4em;
 
   
   /* @apply flex flex-row flex-wrap flex-auto justify-center items-center gap-10 mx-auto text-center ; */
@@ -142,10 +144,33 @@ code {
     order: 3;
   }
 
-  .feature-card-main {
-   @apply  border-2 border-slate-800 rounded-xl p-4 gap-4 bg-gray-200 cursor-pointer;
-  }
+  /* Feature Cards */
+
+.feature-card-main {
+   @apply flex flex-wrap flex-col gap-2 justify-center items-start
+   shadow-inner shadow-slate-800 aspect-square p-8 text-wrap rounded-full cursor-pointer
+    bg-sky-800 text-white
+  } 
+
+.feature-card-main:nth-child(1) { 
+  @apply bg-blend-overlay;
+    }
+
+
+/* .feature-card-main:nth-child(3n+2) { 
+@apply rounded-tl-none rounded-bl-none ;
+} */
 
 .feature-card-main h3 {
-  @apply  text-2xl font-MuseoModerno font-bold hover:font-Major-Mono hover:text-3xl transition-all ease-in-out duration-1000;
+  @apply  text-2xl my-4 font-MuseoModerno text-center
+  font-bold hover:font-Major-Mono hover:text-3xl transition-all ease-in-out duration-1000;
 }
+
+.drawing-board {
+  border: 1px solid #000;
+  display: block;
+  margin: 20px auto;
+  cursor: crosshair;
+}
+
+

@@ -6,12 +6,14 @@ import { HowWorks } from "./pages/HowWorks";
 import { WhatFor } from "./pages/WhatFor";
 import { Who } from "./pages/Who";
 import {Footer} from "./components/Footer";
+import { DrawingBoard } from './components/DrawingBoard';
 
 export const App = () => {
   return (
     <>
     <div className='app-wrapper'>
      <Header/>
+     <DrawingBoard/>
      <Routes>
         <Route path="/" element={<Home />}  />
         <Route path="/what-is-it" element={<WhatIsIt />} />

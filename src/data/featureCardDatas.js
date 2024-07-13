@@ -23,7 +23,7 @@ const featureCardDatas = [
     {
         feature_card_title: "Plan",
         description: "This is a feature card",
-        feature_card_img:"chong-wei-oMcTmNHclZI-unsplash.jpg",
+        feature_card_img:"bartek-garbowicz-xJeCLqsBUqc-unsplash.jpg",
         submenus: [
             {
                 submenu_title: "Write down 3 things you want to achieve today",
@@ -44,6 +44,7 @@ const featureCardDatas = [
     {
         feature_card_title: "Focus on",
         description: "This is a feature card",
+        feature_card_img:"bartek-garbowicz-xJeCLqsBUqc-unsplash.jpg",
         submenus: [
             {
                 submenu_title: "Write down what are you doing right now",
@@ -63,6 +64,7 @@ const featureCardDatas = [
     {
         feature_card_title: "Achieve",
         description: "This is a feature card",
+        feature_card_img:"luke-stackpoole-5Qqkjn4PFPA-unsplash.jpg",
         submenus: [
             {
                 submenu_title: "Write down 1 small thing you want to achieve this week and why",
@@ -85,8 +87,33 @@ const featureCardDatas = [
         buttonText: "Click me"
     },
     {
+        feature_card_title: "Routines",
+        description: "This is a feature card",
+        feature_card_img:"maggie-hung-4LoGKVmUJsI-unsplash.jpg",
+        submenus: [
+            {
+                submenu_title: "Eat",
+                submenu_description: "This is a submenu"
+            },
+            {
+                submenu_title: "Prey",
+                submenu_description: "This relaxation is a submenu",
+            },
+            {
+                submenu_title: "Fit",
+                submenu_description: "This is a submenu"
+            },
+            {
+                submenu_title: "Love",
+                submenu_description: "This is a submenu"
+            }
+        ],
+        buttonText: "Click me"
+    },
+    {
         feature_card_title: "Journal",
         description: "This is a feature card",
+        feature_card_img:"maggie-hung-4LoGKVmUJsI-unsplash.jpg",
         submenus: [
             {
                 submenu_title: "Write here a 10 gratitudes what for are you grateful when wake up",
